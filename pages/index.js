@@ -26,6 +26,7 @@ export default function Home() {
               href={`/topic/${topic.id}`}
               className={styles.card}
               id={topic.id}
+              key={topic.id}
             >
               <h2>{topic.topicName} &rarr;</h2>
               <p>Must do questions related to {topic.topicName}</p>
@@ -40,10 +41,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
-          <span className={styles.logo}>
-           Frontend army
-          </span>
+          Powered by <span className={styles.logo}>Frontend army</span>
         </a>
       </footer>
     </div>

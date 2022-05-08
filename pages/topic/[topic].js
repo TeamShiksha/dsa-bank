@@ -13,16 +13,16 @@ const Post = () => {
 
   console.log(topicInfo.questions);
   return (
-    <div class="topicContainer">
-      <h1 class="topicName"> {topicInfo.topicName} </h1>
+    <div className="topicContainer">
+      <h1 className="topicName"> {topicInfo.topicName} </h1>
 
       {topicInfo.questions.length != 0 && (
-        <div class="questionContainer">
-          {topicInfo.questions.map((question) => (
-            <div class="questionBox">
+        <div className="questionContainer">
+          {topicInfo.questions.map((question, index) => (
+            <div className="questionBox" key={index}>
               <h3> {question.name}</h3>
-              <a href={question.link} target="_blank">
-                <button class="button"> Solve</button>
+              <a href={question.link} target="_blank" rel="noreferrer">
+                <button className="button"> Solve</button>
               </a>
             </div>
           ))}
@@ -38,7 +38,6 @@ const Post = () => {
           Oops! questions for this topic have not been added yet!!
         </div>
       )}
-     
     </div>
   );
 };
