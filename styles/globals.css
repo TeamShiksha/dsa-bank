@@ -1,0 +1,72 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.topicName {
+  color: #50d673;
+  align-self: center;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+.topicContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.questionContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.questionBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4%;
+}
+.questionContainer :nth-child(even) {
+  background-color: rgb(234, 248, 223);
+}
+.button {
+  background-color: #50d673;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px;
+  border: none;
+  font-size: larger;
+}
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+@media (max-width: 400px) {
+  .questionContainer {
+    width: 95%;
+  }
+}
+.oops {
+  display: flex;
+  flex-direction: column;
+}
